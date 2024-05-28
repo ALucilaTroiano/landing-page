@@ -6,7 +6,7 @@
 }
 
 
-      * {
+      *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -31,13 +31,14 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+            flex: grow 1;
         }
 
         .navbar-list {
             display: flex;
-            align-items: center;
+            justify-content: flex-start;
             gap:130px; /* Distribuye el espacio entre los elementos */
-            width: 100%;
+            
         }
 
         .navbar-list a {
@@ -52,5 +53,7 @@
         }
 
         .logito{
-            height: 30%;
+        height: 30%;
+        padding: 0;
+        margin-right: 20px;
        }
