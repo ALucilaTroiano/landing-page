@@ -68,6 +68,7 @@ justify-content: center;
 align-items: center;
 padding: 70px 0;
 background:linear-gradient(rgb(72, 81, 212),rgb(119, 16, 236));
+border: 1px solid green;
 }
 
 .hero-info{
@@ -119,11 +120,3 @@ margin-right: 20px;
 
 
 
-.hero-img {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; /* Opcional, para centrar verticalmente si hay más contenido */
-}
-
-
- 
