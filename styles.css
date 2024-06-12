@@ -13,12 +13,13 @@
     list-style-type: none;
     font-family: "IBM Plex Sans", sans-serif;
     text-decoration: none;
+
 }
 
 
 /* Header */
 header {
-    background: linear-gradient(to bottom,rebeccapurple, hotpink);
+    background: linear-gradient(to bottom, rebeccapurple, hotpink);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,32 +49,33 @@ header {
 }
 
 .navbar a:hover {
-  color:rgb(116, 72, 236)
+  color:rgb(74, 18, 240)
          /* Color del texto al pasar el mouse */
 }
 
 .main{
    display:flex;
-   flex-direction: column; 
+   flex-direction: column;
    align-items: center;
    justify-content: center;
+  
 }
 
 #hero{
-max-width: 1200px;
+
 display:flex;
 justify-content: center;
-align-items:center;
+align-items: center;
 padding: 70px 0;
-background:linear-gradient(hotpink,rgb(119, 16, 236))
+background:linear-gradient(rgb(72, 81, 212),rgb(119, 16, 236));
 }
 
 .hero-info{
 display:flex;
-flex-direction:column;
-gap:20px;
+flex-direction: column;
+align-items:flex-start;
+gap:25px;
 width:50%;
-align-items: flex-start;
 
 }
 
@@ -92,13 +94,21 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hero-info a{
-background-color:rgb(102, 12, 247);
-color:rgb(243, 9, 126);
-border-radius:30px;
-padding: 10px 25px;
-font-size: 14px;
-}
+    background-color:rgb(132, 73, 226);
+    color:rgb(243, 9, 126);
+    border-radius:30px;
+    padding: 10px 25px;
+    font-size: 14px;
+    }
 
+.hero-info a{
+background-color:rgb(212, 58, 233);
+    color:rgb(155, 19, 182);
+    border-radius:30px;
+    padding: 10px 25px;
+    font-size: 14px;
+  
+}   
 
 
 .Logo{
@@ -106,4 +116,14 @@ height: 30%;
 padding: 0;
 margin-right: 20px;
 }
-  
+
+
+
+.hero-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Opcional, para centrar verticalmente si hay más contenido */
+}
+
+
+ 
