@@ -1,9 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
---luli:rebeccapurple;
-}
 
 
 * {
@@ -13,19 +8,23 @@
     list-style-type: none;
     font-family: "IBM Plex Sans", sans-serif;
     text-decoration: none;
- 
+
 }
 
+body {
+    background: linear-gradient(to bottom, rgb(81, 83, 235), rgb(147, 7, 240));
+}
 
 
 /* Header */
 header {
-    background: linear-gradient(to bottom, rebeccapurple, hotpink);
+    background: linear-gradient(to bottom, rgb(67, 55, 245), hotpink);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    height: 60px; /* Reduce la altura */
+    height: 60px;
+    /* Reduce la altura */
 }
 
 .navbar {
@@ -37,16 +36,20 @@ header {
 .navbar-list {
     display: flex;
     justify-content: flex-start;
-    gap: 50px; /* Distribuye el espacio entre los elementos */
+    gap: 50px;
+    /* Distribuye el espacio entre los elementos */
 }
 
 .navbar-list a {
-    font-size: 18px; /* Ajusta el tamaño de la fuente */
-    color: white; /* Asegura que los enlaces sean visibles */
+    font-size: 18px;
+    /* Ajusta el tamaño de la fuente */
+    color: white;
+    /* Asegura que los enlaces sean visibles */
 }
 
 .navbar a:hover {
-    color: rgb(74, 18, 240); /* Color del texto al pasar el mouse */
+    color: rgb(74, 18, 240);
+    /* Color del texto al pasar el mouse */
 }
 
 .main {
@@ -54,7 +57,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  /* Asegura que el contenedor principal ocupe al menos el 100% de la altura del viewport */
+    /* Asegura que el contenedor principal ocupe al menos el 100% de la altura del viewport */
 }
 
 #hero {
@@ -62,8 +65,8 @@ header {
     justify-content: center;
     align-items: center;
     padding: 80px 0;
-    background: linear-gradient(rgb(38, 51, 235), rgb(119, 16, 236));
-    
+    background: linear-gradient(rgb(161, 34, 235), rgb(119, 16, 236));
+
 }
 
 .hero-info {
@@ -84,7 +87,7 @@ header {
     background-color: rgb(24, 38, 231);
     color: rgb(243, 9, 126);
     border-radius: 15px;
-    padding:  18px;
+    padding: 18px;
     font-size: 14px;
 }
 
@@ -101,8 +104,11 @@ header {
 .seccion {
     display: flex;
     align-items: center;
-    
+    text-decoration: underline;
+    font-size: 40px;
+    height: 100px;
     justify-content: center;
+
 }
 
 .info {
@@ -111,5 +117,130 @@ header {
     width: 80%;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
+}
+
+.about {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.footer {
+    color: #FFF;
+    padding: 40px;
+    text-align: center;
+    clear: both;
+}
+
+@media(max-width:992px) {
+
+    /* Notebooks y tablets*/
+    .navbar {
+        gap: 20px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        text-align: center;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        background-color: rgb(247, 24, 180);
+        border: 2px solid white;
+        border-top: 0;
+        border-radius: 0px 0px 15px 15px;
+        gap: 25px;
+        padding: 45px 0;
+        flex-direction: column;
+    }
+
+    .navbar-list a {
+        font-size: 1.2 rem;
+
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+    }
+
+    .menu-label img {
+        width: 25px;
+        height: 20px;
+    }
+
+}
+
+#menu-toggle:checked~.navbar-list {
+    display: flex;
+}
+
+.hero-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 70px;
+}
+
+.hero-info h1 {
+    font-size: 35px;
+    max-width: 500%;
+}
+
+.about {
+    max-width: 95%;
+    font-size: small;
+
+}
+
+
+
+
+.seccion {
+    font-size: 30px;
+}
+
+.toggle {
+    width: 20px;
+}
+
+
+
+
+/* Celu*/
+@media(max-width:576px) {
+    .hero-info h1 {
+        padding: 70px;
+        width: 500%;
+        font-size: 30px;
+
+    }
+
+    .info {
+        width: 200%;
+        padding: 25px;
+        height: 290px;
+        font-size: medium;
+        margin-left: 40px;
+        gap: 100px;
+    }
+
+    .hero-info a {
+        margin-left: 10px;
+    }
+
+    .about {
+        padding: 50px;
+        max-width: 100%;
+        font-size: medium;
+    }
+
+
 }
