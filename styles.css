@@ -97,7 +97,6 @@ header {
 .hero-info p{
  padding:50px;
   font-size: 26px;
-  width: 100%;
 
 }
 .hero-info a {
@@ -105,7 +104,7 @@ header {
     background-color: rgb(24, 38, 231);
     color: rgb(243, 9, 126);
     border-radius: 15px;
-    margin: 0 auto;
+    margin:0 auto;
      padding: 10px 30px;
 }
 
@@ -235,9 +234,7 @@ header {
    .hero-info h1{
     font-size:250%;
    }
-   .hero-info p{
-   font-size:200%;
-}
+
 
 .hero-info a{
     font-size:20px;
@@ -250,7 +247,7 @@ header {
 }
 
 .presentacion-data p{
-    font-size: 200%;
+    font-size: 100%;
 }
 }
 
