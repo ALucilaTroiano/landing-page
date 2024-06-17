@@ -100,12 +100,15 @@ header {
 
 }
 .hero-info a {
-    
     background-color: rgb(24, 38, 231);
     color: rgb(243, 9, 126);
     border-radius: 15px;
-    margin:0 auto;
-     padding: 10px 30px;
+    margin:0 15px;
+    padding: 15px;
+}
+
+.contenedor{
+    display: flex;
 }
 
 .hero-img {
@@ -132,7 +135,7 @@ header {
     font-size: 40px;
 }
 
-.presentacion-data p{
+    .presentacion-data p{
     display: flex;
     text-align: center;
      align-items: center;
@@ -144,12 +147,12 @@ header {
     }
 
 
-.footer {
+  .footer {
     color: #FFF;
     padding: 40px;
     text-align: center;
     clear: both;
-}
+  }
 
  #menu-toggle{
     display:none;
