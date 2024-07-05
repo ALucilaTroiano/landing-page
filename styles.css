@@ -13,13 +13,13 @@
 }
 
 body {
-    background: linear-gradient(to bottom, rgb(250, 6, 217), rgb(209, 77, 221));
+    background: linear-gradient(to bottom, rgb(250, 6, 229), rgb(191, 93, 247));
 }
 
 
 /* Header */
 header {
-    background: linear-gradient(to bottom, rgb(74, 84, 230), rgb(247, 45, 236));
+    background: linear-gradient(to bottom, rgb(131, 6, 233), rgb(247, 45, 236));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,6 +40,7 @@ header {
     gap: 50px;
     /* Distribuye el espacio entre los elementos */
 }
+
 .Logo {
     height: 30%;
     padding: 0;
@@ -70,8 +71,8 @@ header {
     justify-content: center;
     align-items: center;
     padding: 65px 0;
-    background: linear-gradient(rgb(98, 12, 197), rgb(236, 42, 236));
-     gap:35px;
+    background: linear-gradient (rgb(98, 12, 197), rgb(236, 42, 236));
+    gap:35px;
     }
 
 
@@ -98,7 +99,7 @@ header {
 
 }
 .hero-info a { 
-    background-color: rgb(12, 74, 243);
+    background-color: rgb(235, 7, 166);
     color: rgb(19, 17, 18);
     border-radius: 15px;
     margin:0 15px;
@@ -142,7 +143,7 @@ header {
      justify-content: center;
       font-size: 26px;
     
-    }
+  }
 
     
    
@@ -183,18 +184,29 @@ font-size: 20px;
 }
 
 .info-card{
-    background-color: rgb(12, 74, 243);
+    background-color: hotpink;
      color: rgb(4, 29, 66);
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: center;                                                              
+    text-align: center;                                                                                                           
+    line-height: 1.5;
     gap:30px;
     border-radius: 10px;
     max-width:300px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgb(230, 2, 2);
+    transition:all 400ms ease;
+
  }
+.info-card:hover{
+  box-shadow: 5px 5px 20px rgb(230, 2, 2);
+  transform:translateY(-3%)
+}
+
+
   .info-card img{
    width: 50px;
   }
@@ -206,35 +218,110 @@ font-size: 20px;
 
 
  .info-card p{
-  color:#351a1a
+  color:#351a1a;
+}
+#char{
+display: flex;
+justify-content: center;
+align-items: center;
+padding:65px 0;
+background: linear-gradient (rgb(98, 12, 197), rgb(236, 42, 236));
+gap:35px;
 }
 
-/* FOOTER SECCION*/
+.char-img{
+  margin-right: 20%;
+  margin-top: -80px;
+}
+
+
+.char-form{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.char-form input{
+  font-size: 15px;
+  border-radius: 22px;
+  padding:14px 50px;
+  margin: 10px;
+ border: 2px solid rgb(127, 6, 207);
+
+
+}
+.char-condiciones{
+  color:white;
+}
+
+.btn{
+  background:hotpink;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  margin-left: 30px;
+  color: azure;
+  font-size: 20px;
+  font-weight:bolder;
+  position: relative;
+  border-radius: 12px;
+}
+
+button:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,  rgb(238, 3, 3), rgb(251, 255, 0));
+  background-size: 800%;
+  border-radius: 12px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+}
+100% {
+    background-position: 0 0;
+}
+}
 
 #contact {
-    background-color:rgb(247, 18, 247);
-    padding: 20px ;
-    text-align: center;
-    margin-top:auto;
+  background-color:rgb(248, 37, 178);
+  padding: 20px ;
+  text-align: center;
+  margin-top:auto;
+
 }
 
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-container p{
-    color:rgb(55, 9, 221);
-    font-size: 1.2rem;
-    margin-bottom: 12px;
+  color:rgb(33, 33, 34);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
 }
 
 .contact-redes {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
 }
+
+
 
    /* Hover a los del navbar */
   .navbar-list li {
@@ -293,24 +380,8 @@ font-size: 20px;
   .hero-info a{
     animation: loop 1s ease, slide-up 0.9s;
   }
-/*ANIMACIONES SECTION INFO*/
-#info h2{
-    animation:loop ease 0.8s 0.3s,slide-up 0.9 0.3s ease;
-}
-
-#info p{
-    animation:loop ease 0.8s 0.2s,slide-up 0.9 0.3s ease;
-}
 
 
-
-
-
-
-
-
-
-   
 
 @media(max-width: 992px) {
 
@@ -400,4 +471,4 @@ font-size: 20px;
     font-size: 100%;
 }
 }
-
+  
